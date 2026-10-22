@@ -5,41 +5,50 @@
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Montserrat", sans-serif;
 
-  --color-primary: #73D8C3;
-  --color-secondary: #FFB5A0;
-  --color-tertiary: #E9C349;
-  --color-surface: #181210;
+  --color-primary: #1F7363;
+  --color-secondary: #C85F3B;
+  --color-tertiary: #B88319;
+  --color-surface: #FFFFFF;
   
-  --color-background: #181210;
-  --color-foreground: #F5F5F5;
+  --color-background: #FAF8F5;
+  --color-foreground: #241B16;
 }
 
 @layer base {
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased selection:bg-secondary/20 selection:text-secondary;
+    background-color: #FAF8F5;
+    color: #241B16;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-serif text-foreground tracking-wide;
   }
 }
 
 .glass {
-  background: rgba(24, 18, 16, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(115, 216, 195, 0.1);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(36, 27, 22, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(36, 27, 22, 0.04);
+}
+
+.glass-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(36, 27, 22, 0.08);
+  box-shadow: 0 2px 12px -2px rgba(36, 27, 22, 0.04);
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #73D8C3, #E9C349);
+  background: linear-gradient(135deg, #1F7363, #B88319);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Swiper custom styles */
 .swiper-button-next, .swiper-button-prev {
-  color: #73D8C3 !important;
+  color: #1F7363 !important;
 }
 .swiper-pagination-bullet-active {
-  background: #73D8C3 !important;
+  background: #1F7363 !important;
 }
