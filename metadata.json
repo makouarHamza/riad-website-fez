@@ -1,0 +1,5 @@
+{
+  "name": "Riad Fez - Luxury Boutique Hotel",
+  "description": "Experience the ethereal beauty of Fez at Riad Fez. A modern, responsive booking platform for tourists seeking a tactile, clay-like feel of traditional Moroccan hospitality.",
+  "requestFramePermissions": ["geolocation"]
+}
